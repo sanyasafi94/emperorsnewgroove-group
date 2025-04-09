@@ -18,10 +18,11 @@
     background-color: var(--primary);
 }
 .nav{
-    /*display: flex;*/
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
  }
 .nav__link{
-    float: right;
-    color: var(--white);
+    margin-top: 50px;
+    color: black; 
 }
