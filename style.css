@@ -11,7 +11,17 @@
     padding: 0;
  }
 
+/* Standard Styles -- This includes the header and the footer */
+
 .header{
+    padding: 10px;
+    background-color: var(--primary);
+}
+.nav{
+    /*display: flex;*/
     
-    background-color: var(--orange);
+ }
+.nav__link{
+    float: right;
+    color: var(--white);
 }
