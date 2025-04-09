@@ -6,4 +6,12 @@
     --mustard:#C39755;
     --white: white;
 }
+* {
+    margin: 0;
+    padding: 0;
+ }
 
+.header{
+    
+    background-color: var(--orange);
+}
