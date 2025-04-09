@@ -13,15 +13,25 @@
 
 /* Standard Styles -- This includes the header and the footer */
 
-.header{
-    padding: 10px;
+.header {
     background-color: var(--primary);
+
 }
+
 .nav{
-    /*display: flex;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Skia";
+    font-weight: bold;
     
- }
+}
+
 .nav__link{
-    float: right;
     color: var(--white);
+    display: flex;
+    padding: none;
+    margin:10px;
+    
 }
