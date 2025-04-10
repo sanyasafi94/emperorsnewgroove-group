@@ -2,6 +2,7 @@
 .character {
     padding-left: 100px;
     padding-right: 100px;
+    font-family: "Skia";
 }
 .character__content {
     display: flex;
