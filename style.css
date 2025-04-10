@@ -22,25 +22,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    margin: none;
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    
+}
+
+.nav__logo{
+    margin-left: 30px;
     
 }
 
 .nav__link{
     color: var(--white);
     display: flex;
+    flex-direction: row;
+    margin: 50px;
     padding: none;
-    margin:10px;
-    
+    border: solid 1pt black;
 }
+
 /*Style for characters page*/
 .character {
     padding-left: 100px;
     padding-right: 100px;
-    font-family: "Skia";
-}
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    
 .character__content {
     display: flex;
     flex-direction: row;
