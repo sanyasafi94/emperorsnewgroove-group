@@ -1,3 +1,4 @@
+ deovyun
 /*Style for characters page*/
 .character {
     padding-left: 100px;
@@ -80,4 +81,40 @@
         padding: 1rem;
         width: 100%
     }
+:root{
+    --primary: #C22D30;
+    --secondary: #6F3B6F;
+    --orange: #E59866;
+    --yellow: #FCE28D;
+    --mustard:#C39755;
+    --white: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+/* Standard Styles -- This includes the header and the footer */
+
+.header {
+    background-color: var(--primary);
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Skia";
+    font-weight: bold;
+    
+}
+
+.nav__link{
+    color: var(--white);
+    display: flex;
+    padding: none;
+    margin:10px;
+    
 }
