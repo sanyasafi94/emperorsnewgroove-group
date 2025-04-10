@@ -12,7 +12,7 @@
  }
 
  .body{
-    max-width: 1500px;
+    max-width: 1400px;
  }
 
 /* Standard Styles -- This includes the header and the footer */
@@ -49,8 +49,27 @@
 }
 
 .footer{
-
+    width: 1500px;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    padding: 1em;
+    margin: auto;
+    align-items: center;
 }
+
+.copyright {
+    margin: auto;
+}
+
+.footer__link{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: auto;
+    color: var(--white);
+}
+
 /*Hero Styles*/
 
 .hero__home{
@@ -81,19 +100,92 @@
 }
 /*First Section*/
 
+.article__text{
+
+    margin: auto;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary);
+    font-size: 2em;
+}
+
 .box {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.box__text{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.box__image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
 .article__home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 40px;
 }
 
+/*Table Styles*/
+
+.table__header{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    padding-bottom: 20px;
+    color: var(--primary);
+    font-size: 2em;
+    justify-content: center;
+}
+
+.table__names {
+    color: var(--secondary);
+}
+
+.table__stats{
+    border: 3px dotted var(--orange);
+    max-width: 1000px;
+    background-color: ;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+
+}
+
+.table__numbers{
+    align-items: center;
+}
+
+/*Comparison Image*/
+
+.comparison{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.comparison__image{
+    display: flex;
+    margin: auto;
+
+}
 
 /*Style for characters page*/
 
