@@ -12,7 +12,7 @@
  }
 
  .body{
-    max-width: 1500px;
+    max-width: 1400px;
  }
 
 /* Standard Styles -- This includes the header and the footer */
@@ -49,8 +49,27 @@
 }
 
 .footer{
-
+    width: 1500px;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    padding: 1em;
+    margin: auto;
+    align-items: center;
 }
+
+.copyright {
+    margin: auto;
+}
+
+.footer__link{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: auto;
+    color: var(--white);
+}
+
 /*Hero Styles*/
 
 .hero__home{
@@ -129,14 +148,19 @@
     justify-content: center;
 }
 
+.table__names {
+    color: var(--secondary);
+}
+
 .table__stats{
-    border: 1px solid var(--secondary);
+    border: 3px dotted var(--orange);
     max-width: 1000px;
-    background-color: var(--yellow);
+    background-color: ;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 45px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
 
 }
 
@@ -144,6 +168,24 @@
     align-items: center;
 }
 
+/*Comparison Image*/
+
+.comparison{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.comparison__image{
+    display: flex;
+    margin: auto;
+
+}
 
 /*Style for characters page*/
 
