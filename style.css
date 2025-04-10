@@ -11,6 +11,10 @@
     padding: 0;
  }
 
+ .body{
+    max-width: 1500px;
+ }
+
 /* Standard Styles -- This includes the header and the footer */
 
 .header {
@@ -21,6 +25,7 @@
 .nav{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: none;
     font-family: 'Lucida Sans', Arial, sans-serif;
@@ -30,6 +35,7 @@
 
 .nav__logo{
     margin-left: 30px;
+    padding-bottom: 20px;
     
 }
 
@@ -37,10 +43,15 @@
     color: var(--white);
     display: flex;
     flex-direction: row;
-    margin: 50px;
-    padding: none;
-    border: solid 1pt black;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
 }
+
+.footer{
+
+}
+/*Hero Styles*/
 
 .hero__home{
         height: 300px;
@@ -61,19 +72,31 @@
     font-size: 50px;
     color: var(--white);
     padding: 0 40px 0 40px;
-    background-color: var(--secondary);
-
 }
 
 .hero__text {
-    border: solid;
     font-family: 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--white);
+}
+/*First Section*/
 
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+
+.article__home {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+
 /*Style for characters page*/
+
 .character {
     padding-left: 100px;
     padding-right: 100px;
