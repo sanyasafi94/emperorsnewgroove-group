@@ -1,3 +1,86 @@
+ deovyun
+/*Style for characters page*/
+.character {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: "Skia";
+}
+.character__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.character__content:hover {
+    transform: scale(1.02);
+}
+
+.character__images {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border-right: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
+}
+
+.character__bio {
+    flex: 1;
+    padding: 1rem;
+}
+
+.character h1{
+    font-size: 36px;
+    color: var(--primary);
+}
+
+.character h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.character__title {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--orange);
+}
+
+.character__actor {
+    font-weight: bold;
+    color: var(--orange);
+    font-size: 21px;
+}
+
+.character__p {
+    font-size: 14px;
+    color: black;
+}
+
+/*Media query for Characters page*/
+@media (max-width: 768px) {
+    .character__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character__images {
+        border-right: none;
+        border-bottom: 3px solid #ddd;
+        width: 250px;
+        height: 300px;
+    }
+
+    .character__bio {
+        padding: 1rem;
+        width: 100%
+    }
 :root{
     --primary: #C22D30;
     --secondary: #6F3B6F;
