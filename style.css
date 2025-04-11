@@ -2,7 +2,7 @@
 .character {
     padding-left: 100px;
     padding-right: 100px;
-    font-family: "Skia";
+    font-family: Helvetica, sans-serif;
 }
 .character__content {
     display: flex;
@@ -36,6 +36,7 @@
 
 .character h1{
     font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--primary);
 }
 
@@ -43,23 +44,27 @@
     margin-top: 0;
     font-size: 24px;
     color: var(--primary);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .character__title {
     font-size: 18px;
     font-style: italic;
     color: var(--orange);
+    font-family: Helvetica, sans-serif;
 }
 
 .character__actor {
     font-weight: bold;
     color: var(--orange);
     font-size: 21px;
+    font-family: Helvetica, sans-serif;
 }
 
 .character__p {
     font-size: 14px;
     color: black;
+    font-family: Helvetica, sans-serif;
 }
 
 /*Media query for Characters page*/
