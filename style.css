@@ -192,7 +192,12 @@
 .character {
     padding-left: 100px;
     padding-right: 100px;
+deovyun
+    font-family: Helvetica, sans-serif;
+
     font-family: 'Lucida Sans', Arial, sans-serif;
+ main
+}
     
 .character__content {
     display: flex;
@@ -226,6 +231,7 @@
 
 .character h1{
     font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--primary);
 }
 
@@ -233,23 +239,40 @@
     margin-top: 0;
     font-size: 24px;
     color: var(--primary);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .character__title {
     font-size: 18px;
     font-style: italic;
     color: var(--orange);
+    font-family: Helvetica, sans-serif;
 }
 
 .character__actor {
     font-weight: bold;
     color: var(--orange);
     font-size: 21px;
+    font-family: Helvetica, sans-serif;
 }
 
 .character__p {
     font-size: 14px;
     color: black;
+    font-family: Helvetica, sans-serif;
+}
+
+/*Styling for Plot page*/
+.plot {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 0 auto 1.5em auto;
+    line-height: 1.6;
+    align-items: start;
 }
 
 /*Media query for Characters page*/
@@ -271,3 +294,34 @@
         width: 100%
     }
 }
+:root{
+    --primary: #C22D30;
+    --secondary: #6F3B6F;
+    --orange: #E59866;
+    --yellow: #FCE28D;
+    --mustard:#C39755;
+    --white: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+/* Standard Styles -- This includes the header and the footer */
+
+.header {
+    background-color: var(--primary);
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Skia";
+    font-weight: bold;
+    
+
+}
+
