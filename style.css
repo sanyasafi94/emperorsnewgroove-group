@@ -193,6 +193,7 @@
     padding-left: 100px;
     padding-right: 100px;
     font-family: 'Lucida Sans', Arial, sans-serif;
+}
     
 .character__content {
     display: flex;
@@ -252,6 +253,19 @@
     color: black;
 }
 
+/*Styling for Plot page*/
+.plot {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 0 auto 1.5em auto;
+    line-height: 1.6;
+    align-items: start;
+}
+
 /*Media query for Characters page*/
 @media (max-width: 768px) {
     .character__content {
@@ -270,3 +284,5 @@
         padding: 1rem;
         width: 100%
     }
+}
+
