@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <nav class="nav">
         <a href="index.html" class="nav__logo"
@@ -23,6 +23,7 @@
             width="180px"
             height="100px"
         /></a>
+
         <a href="plot.html" class="nav__link nav__plot">Plot</a>
         <a href="characters.html" class="nav__link nav__characters"
           >Characters</a
@@ -33,42 +34,44 @@
 
     <main class="main__home">
       <section class="hero__home">
-        <p>Boom Bam Baby!</p>
-        <p>Join Kuzco and Pacha on an adventure of friendship and bravery!</p>
+        <p class="hero__title">Boom Bam Baby!</p>
+        <p class="hero__text">
+          Join Kuzco and Pacha on an adventure of friendship and bravery!
+        </p>
       </section>
       <article class="article__home">
-        <h1 class="article__heading">Learn the Groove</h1>
-        <div class="plot__box">
-          <img class="img__plot" src="images/plot.jpg" alt="llama vial" />
-          <p>Learn about the story of Kuzco, Ymza, Pacha, and Kronk</p>
+        <h1 class="article__text">Learn the Groove</h1>
+        <div class="box">
+          <img class="box__img" src="images/plot.jpg" alt="llama vial" />
+          <p class="box__text">
+            Learn about the story of Kuzco, Ymza, Pacha, and Kronk
+          </p>
           <button>Learn more</button>
         </div>
-        <div class="character__box">
+        <div class="box">
           <img
-            class="img__characters"
+            class="box__img"
             src="images/characters.jpg"
             alt="main characters"
           />
-          <p>
+          <p class="box__text">
             A story is not compelte without its characters with their growth,
             humor, and dynamics.
           </p>
           <button>Learn more</button>
         </div>
-        <div class="cast__box">
-          <img
-            class="img__cast"
-            src="images/cast.jpg"
-            alt="Kuzco Voice Actor"
-          />
-          <p>See the voices that brought the characters to life!</p>
+        <div class="box">
+          <img class="box__img" src="images/cast.jpg" alt="Kuzco Voice Actor" />
+          <p class="box__text">
+            See the voices that brought the characters to life!
+          </p>
           <button>Learn more</button>
         </div>
       </article>
       <article class="table">
-        <h2>Box Office and Statistics</h2>
+        <h2 class="table__header">Box Office and Statistics</h2>
         <table class="table__stats" style="width: 100%">
-          <tr class="table__header">
+          <tr class="table__names">
             <th>Release Date</th>
             <th>Opening Day</th>
             <th>Worldwide Earning</th>
@@ -89,10 +92,12 @@
       />
     </main>
     <footer class="footer">
-      <p>&copy;De'ovyun, Jania, Sanya, Jose</p>
-      <a href="plot.html" class="nav__plot">Plot</a>
-      <a href="characters.html" class="nav__characters">Characters</a>
-      <a href="cast.html" class="nav__cast">Cast</a>
+      <p class="copyright">&copy;De'ovyun, Jania, Sanya, Jose</p>
+      <a href="plot.html" class="footer__link nav__plot">Plot</a>
+      <a href="characters.html" class="footer__link nav__characters"
+        >Characters</a
+      >
+      <a href="cast.html" class="footer__link nav__cast">Cast</a>
     </footer>
   </body>
 </html>
