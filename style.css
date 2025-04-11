@@ -9,6 +9,7 @@
 {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
   }
   
@@ -126,6 +127,15 @@
     text-align: justify;
   }
 
+ }
+
+ .body{
+    max-width: 1400px;
+ }
+
+/* Standard Styles -- This includes the header and the footer */
+
+
   .cast__member::after {
     content: "";
     display: table;
@@ -149,7 +159,309 @@
 .footer__link{
     display: flex;
     flex-direction: row;
+
     justify-content: end;
     margin: auto;
     color: var(--white);
 }
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: none;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.nav__logo{
+    margin-left: 30px;
+    padding-bottom: 20px;
+    
+}
+
+.nav__link{
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer{
+    width: 1500px;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    padding: 1em;
+    margin: auto;
+    align-items: center;
+}
+
+.copyright {
+    margin: auto;
+}
+
+.footer__link{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: auto;
+    color: var(--white);
+}
+
+/*Hero Styles*/
+
+.hero__home{
+        height: 300px;
+        background-image: url(images/header_image.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        
+}
+
+.hero__title{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: var(--white);
+    padding: 0 40px 0 40px;
+}
+
+.hero__text {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: var(--white);
+}
+/*First Section*/
+
+.article__text{
+
+    margin: auto;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary);
+    font-size: 2em;
+}
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.box__text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.box__image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.article__home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+/*Table Styles*/
+
+.table__header{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    padding-bottom: 20px;
+    color: var(--primary);
+    font-size: 2em;
+    justify-content: center;
+}
+
+.table__names {
+    color: var(--secondary);
+}
+
+.table__stats{
+    border: 3px dotted var(--orange);
+    max-width: 1000px;
+    background-color: ;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+
+}
+
+.table__numbers{
+    align-items: center;
+}
+
+/*Comparison Image*/
+
+.comparison{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.comparison__image{
+    display: flex;
+    margin: auto;
+
+}
+
+/*Style for characters page*/
+
+.character {
+    padding-left: 100px;
+    padding-right: 100px;
+deovyun
+    font-family: Helvetica, sans-serif;
+
+    font-family: 'Lucida Sans', Arial, sans-serif;
+ main
+}
+    
+.character__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.character__content:hover {
+    transform: scale(1.02);
+}
+
+.character__images {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border-right: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
+}
+
+.character__bio {
+    flex: 1;
+    padding: 1rem;
+}
+
+.character h1{
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--primary);
+}
+
+.character h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--primary);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.character__title {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--orange);
+    font-family: Helvetica, sans-serif;
+}
+
+.character__actor {
+    font-weight: bold;
+    color: var(--orange);
+    font-size: 21px;
+    font-family: Helvetica, sans-serif;
+}
+
+.character__p {
+    font-size: 14px;
+    color: black;
+    font-family: Helvetica, sans-serif;
+}
+
+/*Styling for Plot page*/
+.plot {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 0 auto 1.5em auto;
+    line-height: 1.6;
+    align-items: start;
+}
+
+/*Media query for Characters page*/
+@media (max-width: 768px) {
+    .character__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character__images {
+        border-right: none;
+        border-bottom: 3px solid #ddd;
+        width: 250px;
+        height: 300px;
+    }
+
+    .character__bio {
+        padding: 1rem;
+        width: 100%
+    }
+}
+:root{
+    --primary: #C22D30;
+    --secondary: #6F3B6F;
+    --orange: #E59866;
+    --yellow: #FCE28D;
+    --mustard:#C39755;
+    --white: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+/* Standard Styles -- This includes the header and the footer */
+
+.header {
+    background-color: var(--primary);
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Skia";
+    font-weight: bold;
+    
+
+}
+
