@@ -330,8 +330,9 @@
 /*Style for characters page*/
 
 .character {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
 deovyun
     font-family: Helvetica, sans-serif;
 
@@ -373,10 +374,12 @@ deovyun
     font-size: 36px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--primary);
+    padding-bottom: 25px;
 }
 
 .character h2 {
     margin-top: 0;
+    padding-bottom: 10px;
     font-size: 24px;
     color: var(--primary);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -387,6 +390,7 @@ deovyun
     font-style: italic;
     color: var(--orange);
     font-family: Helvetica, sans-serif;
+    padding-bottom: 5px;
 }
 
 .character__actor {
@@ -394,6 +398,7 @@ deovyun
     color: var(--orange);
     font-size: 21px;
     font-family: Helvetica, sans-serif;
+    padding-bottom: 10px;
 }
 
 .character__p {
@@ -417,7 +422,15 @@ deovyun
 
 /*Media query for Characters page*/
 @media (max-width: 768px) {
+    .character {
+        padding-top: 25px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 25px;
+    }
+
     .character__content {
+        padding-top: 25px;
         flex-direction: column;
         align-items: center;
     }
@@ -431,7 +444,7 @@ deovyun
 
     .character__bio {
         padding: 1rem;
-        width: 100%
+        width: 1;
     }
 }
 :root{
@@ -451,7 +464,6 @@ deovyun
 
 .header {
     background-color: var(--primary);
-
 }
 
 .nav{
@@ -465,3 +477,28 @@ deovyun
 
 }
 
+/*Transistions to nav links*/
+.nav__link{
+    text-decoration: none;
+}
+
+.nav__link:hover{
+    color: var(--secondary);
+    transition: 250ms linear;
+}
+
+footer {
+    margin-top: auto;
+    background-color: var(--primary);
+    text-align: center;
+}
+.footer__link {
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+
+.footer__link:hover {
+    color: var(--secondary);
+    transition: 250ms linear;
+}
