@@ -135,6 +135,32 @@
     margin-top: 40px;
 }
 
+.button{
+    margin: 15px;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+button:hover{
+    margin: 15px;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 8px;
+    color: var(--secondary);
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
 /*Table Styles*/
 
 .table__header{
