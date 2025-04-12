@@ -173,6 +173,17 @@
     
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
 .nav__logo{
     margin-left: 30px;
     padding-bottom: 20px;
@@ -406,7 +417,6 @@ deovyun
 /*Styling for Plot page*/
 .plot , .plot-right {
     padding: 1.5em;
-    margin-bottom: 2em;
     border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #f9f9f9;
@@ -415,7 +425,7 @@ deovyun
     line-height: 1.6;
 }
 
-.plot-link :hover {
+.plot-link:hover {
     color: #C22D30;
 }
 .plot-link {
@@ -481,8 +491,10 @@ deovyun
 
  
 /* Media queries for plot page  */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    
     .header {
+        width: 100%;
         padding: 1rem;
         text-align: center;
       }
@@ -492,7 +504,6 @@ deovyun
         align-items: center;
         padding: 1rem;
         gap: 1rem;
-        width: 100%;
         max-width: 100%;
         box-sizing: border-box;
       }
@@ -502,26 +513,28 @@ deovyun
         height: auto;
       }
     
-      .nav__link {
+      .nav__links {
         flex-direction: column;
         align-items: center;
-        gap: 0.75rem;
+        width: 100%;
+        gap: 0.5rem;
       }
     
       .nav__link {
         font-size: 1rem;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0;
         width: 100%;
-        text-align: center;
       }
     }
     .plot {
         flex-direction: column;  
         align-items: center;
+        width: 75%
     }
 
     .plot__image img {
-        max-width: 100%;  
+        max-width: 100%;
+        height:auto  
     }
 }
 
