@@ -12,7 +12,7 @@
  }
 
  .body{
-    max-width: 1400px;
+    
  }
 
 /* Standard Styles -- This includes the header and the footer */
@@ -25,10 +25,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: none;
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    flex: 1;
+}
+
+.links{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .nav__logo{
@@ -44,10 +51,11 @@
     flex-wrap: wrap;
     align-items: center;
     margin-right: 20px;
+
 }
 
 .footer{
-    width: 1400px;
+    /* width: 1400px; */
     background-color: var(--primary);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--white);
@@ -57,15 +65,21 @@
 }
 
 .copyright {
+    display: flex;
     margin: auto;
+    justify-content: center;
 }
 
 .footer__link{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     margin: auto;
     color: var(--white);
+}
+.contentBody{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*Hero Styles*/
@@ -111,8 +125,11 @@
     float: left;
     width: 33.33%;
     padding: 5px;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
+    border-style: solid;
 }
 
 .box__text{
@@ -135,8 +152,9 @@
     margin-top: 40px;
 }
 
+
 .button{
-    margin: 15px;
+    margin-top: 15px;
     background-color: var(--secondary);
     border: none;
     border-radius: 8px;
@@ -144,11 +162,16 @@
     padding: 10px 22px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 14px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+    align-self: center;
+    width: fit-content;
+    font-family: Helvetica, sans-serif;
 }
 
-button:hover{
+.button:hover{
     margin: 15px;
     background-color: var(--yellow);
     border: none;
@@ -159,9 +182,14 @@ button:hover{
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
+    font-family: Helvetica, sans-serif;
 }
 
 /*Table Styles*/
+.table{
+    margin-top: 20px;
+    border-style: solid;
+}
 
 .table__header{
     font-family: 'Lucida Sans', Arial, sans-serif;
@@ -169,6 +197,7 @@ button:hover{
     padding-bottom: 20px;
     color: var(--primary);
     font-size: 2em;
+    display: flex;
     justify-content: center;
 }
 
@@ -179,9 +208,9 @@ button:hover{
 .table__stats{
     border: 3px dotted var(--orange);
     max-width: 1000px;
-    background-color: ;
+    /* background-color: ; */
     margin: auto;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 45px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px;
@@ -189,7 +218,10 @@ button:hover{
 }
 
 .table__numbers{
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    
 }
 
 /*Comparison Image*/
@@ -199,9 +231,8 @@ button:hover{
     font-size: 2em;
     font-weight: bold;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-bottom: 15px;
+    align-items: center;
     color: var(--primary);
 }
 
