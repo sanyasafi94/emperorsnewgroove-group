@@ -173,6 +173,17 @@
     
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
 .nav__logo{
     margin-left: 30px;
     padding-bottom: 20px;
@@ -407,18 +418,49 @@ deovyun
     font-family: Helvetica, sans-serif;
 }
 
+
 /*Styling for Plot page*/
-.plot {
+.plot , .plot-right {
     padding: 1.5em;
-    margin-bottom: 2em;
     border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #f9f9f9;
     max-width: 600px;
     margin: 0 auto 1.5em auto;
     line-height: 1.6;
-    align-items: start;
 }
+
+.plot-link:hover {
+    color: #C22D30;
+}
+.plot-link {
+    text-decoration: none;
+    color: #000;
+}
+
+  .plot__image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 300px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .plot {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto 1.5em auto
+  }
+  .plot__text {
+    flex: 1;
+    min-width: 250px;
+    word-wrap: break-word;
+  }
 
 /*Media query for Characters page*/
 @media (max-width: 768px) {
@@ -459,6 +501,55 @@ deovyun
     margin: 0;
     padding: 0;
  }
+
+ 
+/* Media queries for plot page  */
+@media screen and (max-width: 768px) {
+    
+    .header {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+      }
+    
+      .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+    
+      .nav__logo-image {
+        width: 140px;
+        height: auto;
+      }
+    
+      .nav__links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+      }
+    
+      .nav__link {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        width: 100%;
+      }
+    }
+    .plot {
+        flex-direction: column;  
+        align-items: center;
+        width: 75%
+    }
+
+    .plot__image img {
+        max-width: 100%;
+        height:auto  
+    }
+}
 
 /* Standard Styles -- This includes the header and the footer */
 
