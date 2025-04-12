@@ -253,18 +253,40 @@
     color: black;
 }
 
+
 /*Styling for Plot page*/
-.plot {
+.plot , .plot-right {
     padding: 1.5em;
     margin-bottom: 2em;
     border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #f9f9f9;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto 1.5em auto;
-    line-height: 1.6;
-    align-items: start;
+    line-height: 1.6; 
 }
+
+
+
+  .plot__image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 300px;
+  }
+  .plot {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto 1.5em auto
+  }
+  .plot__text {
+    flex: 1;
+    min-width: 250px;
+  }
 
 /*Media query for Characters page*/
 @media (max-width: 768px) {
