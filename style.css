@@ -210,7 +210,6 @@ deovyun
     margin-bottom: 2rem;
     overflow: hidden;
     transition: transform 0.3s ease;
-    padding-top: 25px;
 }
 
 .character__content:hover {
@@ -235,6 +234,7 @@ deovyun
     font-size: 36px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--primary);
+    padding-bottom: 25px;
 }
 
 .character h2 {
