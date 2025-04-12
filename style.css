@@ -139,10 +139,13 @@
    font-family: Arial, Helvetica, sans-serif;
 }
 
-.box__image {
+.box__img {
     display: flex;
     flex-direction: column;
+    align-self: center;
     flex-wrap: wrap;
+    width: 500px;
+    
 }
 
 
