@@ -5,10 +5,128 @@
     --yellow: #FCE28D;
     --mustard:#C39755;
     --white: white;
-}
-* {
+  }
+{
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background: #f2f2f2;
+  }
+  
+  .header {
+    background-color: var(--primary);
+    padding: 1rem;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav__logo-image {
+    width: 180px;
+    height: auto;
+  }
+  
+  .nav__links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .nav__link:hover {
+    background-color: #666666;
+    color: #fff;
+  }
+  
+  .nav__link--current {
+    background-color: var(--yellow);
+    color: #000;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cast {
+    padding: 1.5rem;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .cast__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    animation: fadeInDown 1s ease-out;
+    color: #222;
+  }
+  
+  .cast__member {
+    margin-bottom: 2rem;
+    line-height: 1.4;   
+  }
+  
+  .cast__member-image {
+    float: left;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+    transition: transform 0.3s ease;
+  }
+  
+  .cast__member-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .cast__member-name {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0.25rem 0;
+    font-weight: 900;
+    color: #2b2b2b;
+  }
+  
+    .cast__member-bio {
+    text-align: justify;
+  }
+
  }
 
  .body{
@@ -17,20 +135,53 @@
 
 /* Standard Styles -- This includes the header and the footer */
 
-.header {
-    background-color: var(--primary);
 
+  .cast__member::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer{
+    width: 1500px;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    padding: 1em;
+    margin: auto;
+    align-items: center;
 }
 
-.nav{
+.copyright {
+    margin: auto;
+}
+
+.footer__link{
     display: flex;
     flex-direction: row;
+
+    justify-content: end;
+    margin: auto;
+    color: var(--white);
+}
+
     flex-wrap: wrap;
     justify-content: space-between;
     margin: none;
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .nav__logo{
@@ -190,8 +341,9 @@
 /*Style for characters page*/
 
 .character {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
 deovyun
     font-family: Helvetica, sans-serif;
 
@@ -233,10 +385,12 @@ deovyun
     font-size: 36px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--primary);
+    padding-bottom: 25px;
 }
 
 .character h2 {
     margin-top: 0;
+    padding-bottom: 10px;
     font-size: 24px;
     color: var(--primary);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -247,6 +401,7 @@ deovyun
     font-style: italic;
     color: var(--orange);
     font-family: Helvetica, sans-serif;
+    padding-bottom: 5px;
 }
 
 .character__actor {
@@ -254,6 +409,7 @@ deovyun
     color: var(--orange);
     font-size: 21px;
     font-family: Helvetica, sans-serif;
+    padding-bottom: 10px;
 }
 
 .character__p {
@@ -262,22 +418,61 @@ deovyun
     font-family: Helvetica, sans-serif;
 }
 
+
 /*Styling for Plot page*/
-.plot {
+.plot , .plot-right {
     padding: 1.5em;
-    margin-bottom: 2em;
     border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #f9f9f9;
     max-width: 600px;
     margin: 0 auto 1.5em auto;
     line-height: 1.6;
-    align-items: start;
 }
+
+.plot-link:hover {
+    color: #C22D30;
+}
+.plot-link {
+    text-decoration: none;
+    color: #000;
+}
+
+  .plot__image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 300px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .plot {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto 1.5em auto
+  }
+  .plot__text {
+    flex: 1;
+    min-width: 250px;
+    word-wrap: break-word;
+  }
 
 /*Media query for Characters page*/
 @media (max-width: 768px) {
+    .character {
+        padding-top: 25px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 25px;
+    }
+
     .character__content {
+        padding-top: 25px;
         flex-direction: column;
         align-items: center;
     }
@@ -291,6 +486,100 @@ deovyun
 
     .character__bio {
         padding: 1rem;
-        width: 100%
+        width: 1;
     }
 }
+
+
+ 
+/* Media queries for plot page  */
+@media screen and (max-width: 768px) {
+    
+    .header {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+      }
+    
+      .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+    
+      .nav__logo-image {
+        width: 140px;
+        height: auto;
+      }
+    
+      .nav__links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+      }
+    
+      .nav__link {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        width: 100%;
+      }
+    }
+    .plot {
+        flex-direction: column;  
+        align-items: center;
+        width: 75%
+    }
+
+    .plot__image img {
+        max-width: 100%;
+        height:auto  
+    }
+}
+
+/* Standard Styles -- This includes the header and the footer */
+
+.header {
+    background-color: var(--primary);
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Skia";
+    font-weight: bold;
+    
+
+}
+
+/*Transistions to nav links*/
+.nav__link{
+    text-decoration: none;
+}
+
+.nav__link:hover{
+    color: var(--secondary);
+    transition: 250ms linear;
+}
+
+footer {
+    margin-top: auto;
+    background-color: var(--primary);
+    text-align: center;
+}
+.footer__link {
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+
+.footer__link:hover {
+    color: var(--secondary);
+    transition: 250ms linear;
+}
+
