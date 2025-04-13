@@ -392,6 +392,12 @@
     text-align: justify;
   }
 
+  .cast__member::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 /*Media queries*/
 @media (max-width: 980px) {
