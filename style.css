@@ -293,6 +293,8 @@
     font-size: 36px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--primary);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .character h2 {
@@ -333,9 +335,54 @@
     margin: 0 auto 1.5em auto;
     line-height: 1.6;
     align-items: start;
+
+    /*Jania's code added by De'ovyun do to technical difficulties*/
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto 1.5em auto;
 }
 
+ Updated upstream
+ Updated upstream
+
+ Stashed changes
+.plot__text {
+  flex: 1;
+  min-width: 250px;
+  word-wrap: break-word;
+}
+
+ deovyun
+.plot-link:hover {
+  color: var(--primary);
+}
+
+.plot-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.plot__image img {
+  width:300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 300px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/*End De'ovyun's input for Jania*/
+
 /*Styling for Cast page*/
+ Stashed changes
+
+/*Styling for Cast page*/
+ main
 .cast {
     padding: 1.5rem;
   }
@@ -400,13 +447,14 @@
 
 
 /*Media queries*/
-@media (max-width: 980px) {
+@media (max-width: 980px) and (min-width: 769) {
     
-    nav {
+      .nav {
         flex-direction: column; 
         align-items: center;
         padding: .5rem;
       }
+    
     
       .links {
         display: flex;
@@ -568,8 +616,8 @@
       
 }
 
-
-@media (max-width: 768px) {
+/*Cellphone media query*/
+@media (max-width: 768px) and (min-width: 300px) {
     .character__content {
         flex-direction: column;
         align-items: center;
@@ -584,6 +632,8 @@
 
     .character__bio {
         padding: 1rem;
+        margin-left: 10px;
+        margin-right: 10px;
         width: 1;
     }
 
@@ -596,7 +646,6 @@
     .nav__link {
         margin-right: 0;    /* Remove right margin on stacked links */
         margin-bottom: 0.5rem;
-deovyun
         text-decoration: none;
         padding: 5px;
             
@@ -624,7 +673,6 @@ deovyun
             font-size: 1rem;
         }
       .box {
-main
         width: 50%;       /* Two boxes per row on tablets */
         float: none;
         display: inline-block;
